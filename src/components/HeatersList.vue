@@ -41,3 +41,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.heaters-list {
+  height: 500px;
+  overflow-y: scroll;
+}
+</style>

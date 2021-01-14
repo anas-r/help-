@@ -33,3 +33,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.rooms-list {
+  height: 500px;
+  overflow-y: scroll;
+}
+</style>

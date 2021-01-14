@@ -1,16 +1,13 @@
 <template>
   <ul class="nav nav-tabs" >
-    
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" @click="toggleExpandRooms"> Rooms</a>
       <rooms-list v-if="isExpandedforRooms"></rooms-list>
     </li>
-    <br>
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" @click="toggleExpandWindows"> Windows</a>
       <windows-list v-if="isExpandedforWindows"></windows-list>
     </li>
-    <br>
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" @click="toggleExpandHeaters">Heaters</a>
       <heaters-list v-if="isExpandedforHeaters"></heaters-list>
@@ -52,3 +49,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 50px max(50px, min(200px, 20%));
+}
+</style>

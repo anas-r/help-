@@ -58,6 +58,7 @@ export default {
       let response = await axios.delete(`${API_HOST}/api/heaters/${this.heater.id}`);
       let updatedHeater = response.data;
       this.$emit('heater-updated', updatedHeater);
+      window.location = window.location;
     
     }
   }

@@ -58,7 +58,7 @@ export default {
       let response = await axios.delete(`${API_HOST}/api/windows/${this.window.id}`);
       let updatedWindow = response.data;
       this.$emit('window-updated', updatedWindow);
-    
+      window.location = window.location;
     }
   }
 }

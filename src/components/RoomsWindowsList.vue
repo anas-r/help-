@@ -96,4 +96,9 @@ export default {
 .sub-title {
   margin: 15px;
 }
+
+.windows-list {
+  height: 500px;
+  overflow-y: scroll;
+}
 </style>
